@@ -1,0 +1,10 @@
+<configuration>
+  <springProfile name="local">
+    <appender class="ch.qos.logback.core.ConsoleAppender" name="CONSOLE">
+      <encoder>
+        <pattern>%fullRequest%n{}%n{}%fullResponse</pattern>
+      </encoder>
+    </appender>
+    <appender-ref ref="CONSOLE"/>
+  </springProfile>
+</configuration>
